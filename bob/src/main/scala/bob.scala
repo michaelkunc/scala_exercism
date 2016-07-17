@@ -2,33 +2,26 @@ import scala.util.matching.Regex
 
 class Bob(){
 
-  def hey(statement : String): String = {
-    if (shouting(statement)){
-      "Whoa, chill out!"
-    } else if (question(statement)){
-      "Sure."
-    } else if (silence(statement)){
-      "Fine. Be that way!"
-    }  else {
-      "Whatever."
-    }
+  def hey(statement : String): String = statement match {
+    case Shouting() => "Whoa, chill out!"
+    case Silence() => "Fine. Be that way!"
+    case Question() => "Sure."
+    case _ => "Whatever."
   }
+}
 
-  def silence(statement: String): Boolean = {
+case object Silence {
+  def unapply(statement: String) =
     statement.trim.length == 0
-  }
+}
 
-  def shouting(statement: String): Boolean = {
-    statement == statement.toUpperCase && containsLetters(statement)
-  }
+case object Shouting {
+  val pattern = new Regex("[a-zA-z]")
+  def unapply(statement: String) =
+    statement == statement.toUpperCase && pattern.findAllMatchIn(statement).length != 0
+}
 
-  def question(statement: String): Boolean = {
+case object Question {
+  def unapply(statement: String) =
     statement.takeRight(1) == "?"
-  }
-
-  def containsLetters(statement: String): Boolean= {
-    val pattern = new Regex("[a-zA-z]")
-    pattern.findAllMatchIn(statement).length > 0
-  }
-
 }
