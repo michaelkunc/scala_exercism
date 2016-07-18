@@ -1,5 +1,5 @@
 [0m[[0mdebug[0m] [0m[naha] The Bob source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m[naha] 	notify, unapply, question, wait, $asInstanceOf, pattern, shouting, productArity, equals, Question, asInstanceOf, Silence, synchronized, Shouting, $isInstanceOf, canEqual, containsLetters, productPrefix, notifyAll, isInstanceOf, ==, clone, silence, $init$, toString, !=, getClass, ne, eq, productIterator, ##, finalize, productElement, hashCode.[0m
+[0m[[0mdebug[0m] [0m[naha] 	notify, unapply, question, wait, $asInstanceOf, shouting, productArity, equals, Question, asInstanceOf, Silence, synchronized, Shouting, $isInstanceOf, canEqual, containsLetters, productPrefix, notifyAll, isInstanceOf, ==, clone, silence, $init$, toString, !=, getClass, ne, eq, productIterator, ##, finalize, productElement, hashCode.[0m
 [0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
 [0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) Bob: Set(); now invalidating by inheritance (internally).[0m
 [0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
@@ -11,7 +11,7 @@
 [0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set(NamesChange(Bob,ModifiedNames(regularNames = notify, unapply, question, wait, $asInstanceOf, pattern, shouting, productArity, equals, Question, asInstanceOf, Silence, synchronized, Shouting, $isInstanceOf, canEqual, containsLetters, productPrefix, notifyAll, isInstanceOf, ==, clone, silence, $init$, toString, !=, getClass, ne, eq, productIterator, ##, finalize, productElement, hashCode, implicitNames = )))[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set(NamesChange(Bob,ModifiedNames(regularNames = notify, unapply, question, wait, $asInstanceOf, shouting, productArity, equals, Question, asInstanceOf, Silence, synchronized, Shouting, $isInstanceOf, canEqual, containsLetters, productPrefix, notifyAll, isInstanceOf, ==, clone, silence, $init$, toString, !=, getClass, ne, eq, productIterator, ##, finalize, productElement, hashCode, implicitNames = )))[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] [0m

@@ -1,5 +1,3 @@
-import scala.util.matching.Regex
-
 class Bob(){
 
   def hey(statement : String): String = statement match {
@@ -12,16 +10,16 @@ class Bob(){
 
 case object Silence {
   def unapply(statement: String) =
-    statement.trim.length == 0
+    statement.trim.isEmpty
 }
 
 case object Shouting {
-  val pattern = new Regex("[a-zA-z]")
-  def unapply(statement: String) =
-    statement == statement.toUpperCase && pattern.findAllMatchIn(statement).length != 0
+  def unapply(statement: String) = {
+    (statement.exists(_.isLetter)) && (statement.forall(!_.isLower))
+  }
 }
 
 case object Question {
   def unapply(statement: String) =
-    statement.takeRight(1) == "?"
+    statement.endsWith("?")
 }
