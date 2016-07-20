@@ -31,7 +31,7 @@ class HammingSpecs extends FlatSpec with Matchers {
   }
 
   it should "be undefined for strands of unequal length" in {
-    pending
+    // pending
     an[IllegalArgumentException] should be thrownBy {
       Hamming.compute("AAACTAGGGG", "AGGCTAGCGGTAGGAC")
     }
