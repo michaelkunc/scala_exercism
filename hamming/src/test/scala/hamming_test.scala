@@ -6,7 +6,7 @@ class HammingSpecs extends FlatSpec with Matchers {
   }
 
   it should "detect no difference between identical strands" in {
-    pending
+    // pending
     Hamming.compute("GGACTGA", "GGACTGA") should be (0)
   }
 
