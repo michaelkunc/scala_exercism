@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0m[32mWordCountSpecs:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should count one word[0m[0m
+[0m[[0minfo[0m] [0m[33m- should count one of each (pending)[0m[0m
+[0m[[0minfo[0m] [0m[33m- should count multiple occurrences (pending)[0m[0m
+[0m[[0minfo[0m] [0m[33m- should count everything just once (pending)[0m[0m
+[0m[[0minfo[0m] [0m[33m- should ignore punctuation (pending)[0m[0m
+[0m[[0minfo[0m] [0m[33m- should handle cramped lists (pending)[0m[0m
+[0m[[0minfo[0m] [0m[33m- should include numbers (pending)[0m[0m
+[0m[[0minfo[0m] [0m[33m- should normalize case (pending)[0m[0m
+[0m[[0minfo[0m] [0m[33m- should allow apostrophes (pending)[0m[0m
