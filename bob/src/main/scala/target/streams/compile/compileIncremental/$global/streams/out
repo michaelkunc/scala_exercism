@@ -1,8 +1,8 @@
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	added: Set(/Users/michaelkunc/exercism/scala/bob/src/main/scala/bob.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set(/Users/michaelkunc/exercism/scala/bob/src/main/scala/bob.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
@@ -17,26 +17,19 @@
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/michaelkunc/exercism/scala/bob/src/main/scala/target/scala-2.10/classes...[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.11:component from component compiler for Scala 2.10.6[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.11:component from component compiler for Scala 2.10.6[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 17e90bfc, interfacing (CompilerInterface) with Scala compiler version 2.10.6[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 748ca90c, interfacing (CompilerInterface) with Scala compiler version 2.10.6[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/classes:/Users/michaelkunc/.sbt/boot/scala-2.10.6/lib/scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/Users/michaelkunc/exercism/scala/bob/src/main/scala/target/scala-2.10/classes[0m
-[0m[[33mwarn[0m] [0m/Users/michaelkunc/exercism/scala/bob/src/main/scala/bob.scala:3: a pure expression does nothing in statement position; you may be omitting necessary parentheses[0m
-[0m[[33mwarn[0m] [0m    return "Whatever."[0m
-[0m[[33mwarn[0m] [0m           ^[0m
-[0m[[33mwarn[0m] [0m/Users/michaelkunc/exercism/scala/bob/src/main/scala/bob.scala:3: enclosing method hey has result type Unit: return value discarded[0m
-[0m[[33mwarn[0m] [0m    return "Whatever."[0m
-[0m[[33mwarn[0m] [0m    ^[0m
-[0m[[33mwarn[0m] [0mtwo warnings found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 0.309426753 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 2.119521093 s[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidating /Users/michaelkunc/exercism/scala/bob/src/main/scala/bob.scala...[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/michaelkunc/exercism/scala/bob/src/main/scala/bob.scala...[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/michaelkunc/exercism/scala/bob/src/main/scala/bob.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/Users/michaelkunc/exercism/scala/bob/src/main/scala/bob.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] The /Users/michaelkunc/exercism/scala/bob/src/main/scala/bob.scala source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m[naha] 	notify, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, main, notifyAll, Bob, isInstanceOf, ==, clone, toString, !=, getClass, ne, hey, eq, hey$default$1, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0m[naha] 	notify, unapply, wait, $asInstanceOf, productArity, equals, Question, asInstanceOf, Silence, synchronized, Shouting, $isInstanceOf, canEqual, main, productPrefix, notifyAll, isInstanceOf, <init>, ==, clone, $init$, toString, !=, getClass, ne, hey, eq, hey$default$1, productIterator, ##, finalize, productElement, hashCode.[0m
 [0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
 [0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
 [0m[[0mdebug[0m] [0m[naha] 	Set()[0m
