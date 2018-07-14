@@ -24,7 +24,7 @@ class SpaceAge(age: Long) {
 
   def onNeptune: Double = getAge( 164.79132)
 
-  private def roundAge(ratio: Double)(f: Double) = (BigDecimal.decimal(age / ratio).setScale(2, RoundingMode.HALF_UP).toDouble) * (f)
+  private def roundAge(ratio: Double)(f: Double) = (BigDecimal.decimal((age / ratio) / f).setScale(2, RoundingMode.HALF_UP).toDouble) 
 }
 
 object SpaceAge {
