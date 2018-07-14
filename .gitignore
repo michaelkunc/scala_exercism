@@ -2,4 +2,16 @@
 *.xml
 *.sbt
 target/
-out
+*.nbt
+*.log
+.ensime
+*.hib
+*.him
+*.hit
+*.hnb
+*.cpm
+*.pcl
+*.wal
+*.properties
+*.stt
+.ensime_cache/
