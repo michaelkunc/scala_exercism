@@ -1,32 +1,19 @@
-
-import scala.math.BigDecimal.RoundingMode
-
-class SpaceAge(age: Long) {
-  private val earthYear = 31557600
-
-  def seconds: Long = age
-
-  val getAge = roundAge(earthYear) _
-
-  def onEarth: Double = getAge(1)
-
-  def onMercury: Double = getAge(0.2408467)
-
-  def onVenus: Double = getAge(0.61519726)
-
-  def onMars: Double = getAge(1.8808158)
-
-  def onJupiter: Double = getAge(11.862615)
-
-  def onSaturn: Double = getAge(29.447498)
-
-  def onUranus: Double = getAge(84.016846)
-
-  def onNeptune: Double = getAge( 164.79132)
-
-  private def roundAge(ratio: Double)(f: Double) = (BigDecimal.decimal((age / ratio) / f).setScale(2, RoundingMode.HALF_UP).toDouble) 
-}
-
 object SpaceAge {
-  def apply(ageInSeconds: Long) = new SpaceAge(ageInSeconds)
+
+  private def getAge(age: Double, orbitalPeriod: Double)  : Double = {
+    val earthSeconds = 31557600
+    val thisAge = (age / (orbitalPeriod*earthSeconds))
+    Math.round(thisAge * 100.0) / 100.0
+    
+  }
+  
+
+  def onEarth(age: Double): Double = getAge(age, 1)
+  def onMercury(age: Double): Double = getAge(age, 0.2408467)
+  def onVenus(age: Double): Double = getAge(age, 0.61519726) 
+  def onMars(age: Double): Double = getAge(age, 1.8808158)
+  def onJupiter(age: Double): Double = getAge(age, 11.862615)
+  def onSaturn(age: Double): Double = getAge(age, 29.447498)
+  def onUranus(age: Double): Double = getAge(age, 84.016846)
+  def onNeptune(age: Double): Double = getAge(age, 164.79132)
 }
