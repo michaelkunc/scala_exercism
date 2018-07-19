@@ -1,6 +1,6 @@
 object SpaceAge {
 
-  private def getAge(age: Double, orbitalPeriod: Double)  : Double = {
+  private def getAge(orbitalPeriod: Double) (age: Double)  : Double = {
     val earthSeconds = 31557600
     val thisAge = (age / (orbitalPeriod*earthSeconds))
     Math.round(thisAge * 100.0) / 100.0
@@ -19,12 +19,12 @@ object SpaceAge {
   )
   
 
-  def onEarth(age: Double): Double = getAge(age, planets("Earth"))
-  def onMercury(age: Double): Double = getAge(age, planets("Mercury"))
-  def onVenus(age: Double): Double = getAge(age, planets("Venus")) 
-  def onMars(age: Double): Double = getAge(age, planets("Mars"))
-  def onJupiter(age: Double): Double = getAge(age, planets("Jupiter"))
-  def onSaturn(age: Double): Double = getAge(age, planets("Saturn"))
-  def onUranus(age: Double): Double = getAge(age, planets("Uranus"))
-  def onNeptune(age: Double): Double = getAge(age, planets("Neptune"))
+  def onEarth(age: Double): Double = getAge(planets("Earth")) (age)
+  def onMercury(age: Double): Double = getAge(planets("Mercury")) (age)
+  def onVenus(age: Double): Double = getAge(planets("Venus")) (age)
+  def onMars(age: Double): Double = getAge(planets("Mars")) (age)
+  def onJupiter(age: Double): Double = getAge(planets("Jupiter")) (age)
+  def onSaturn(age: Double): Double = getAge(planets("Saturn")) (age)
+  def onUranus(age: Double): Double = getAge(planets("Uranus")) (age)
+  def onNeptune(age: Double): Double = getAge(planets("Neptune")) (age)
 }
