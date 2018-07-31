@@ -19,12 +19,6 @@ object SpaceAge {
   )
   
 
-  def onEarth(age: Double): Double = getAge(planets("Earth")) (age)
-  def onMercury(age: Double): Double = getAge(planets("Mercury")) (age)
-  def onVenus(age: Double): Double = getAge(planets("Venus")) (age)
-  def onMars(age: Double): Double = getAge(planets("Mars")) (age)
-  def onJupiter(age: Double): Double = getAge(planets("Jupiter")) (age)
-  def onSaturn(age: Double): Double = getAge(planets("Saturn")) (age)
-  def onUranus(age: Double): Double = getAge(planets("Uranus")) (age)
-  def onNeptune(age: Double): Double = getAge(planets("Neptune")) (age)
+  val onEarth = getAge(planets("Earth")) (age)
+
 }
