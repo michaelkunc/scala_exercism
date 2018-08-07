@@ -1,10 +1,13 @@
 class Robot {
 
-    var name = name_builder()
+    var name: String = name_builder()
 
-    def reset() = name_builder()
+    def reset(): String = {
+        this.name = name_builder()
+        this.name
+    }
 
-    def name_builder() = {
+    def name_builder(): String = {
         val r = scala.util.Random
         val prefix = r.shuffle(('A' to 'Z').toList).take(2).mkString
         val suffix = r.shuffle((0 to 9).toList).take(3).mkString
