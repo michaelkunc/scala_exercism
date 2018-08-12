@@ -1,21 +1,23 @@
 class Robot {
 
+    var set = scala.collection.mutable.Set[String]()
+
     var name: String = name_builder()
 
-    def reset(): String = {
-        this.name = name_builder()
-        this.name
-    }
+    def reset() = this.name = name_builder()
+    
 
     def name_builder(): String = {
         val r = scala.util.Random
         val prefix = r.shuffle(('A' to 'Z').toList).take(2).mkString
         val suffix = r.shuffle((0 to 9).toList).take(3).mkString
-        prefix + suffix
-    }
-    // need to
-    // 1) build the name
-    // 2) store it someplace
-    // 3) make sure names don't clash
+        val name = prefix + suffix
+        if (set.contains(name)) {
+            name_builder()
+        } else {
+            set += name
+            name
+        }
 
+    }
 }
