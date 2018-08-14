@@ -1,11 +1,15 @@
 class School {
   type DB = Map[Int, Seq[String]]
 
-  def add(name: String, g: Int) = ???
+  private var _db = Map[Int, Seq[String]]()
 
-  def db: DB = Map[Int, Seq[String]]()
+  def add(name: String, g: Int) = {
+    _db = _db + (g -> (grade(g) :+ name))
+  } 
 
-  def grade(g: Int): Seq[String] = ???
+  def db: DB = _db
 
-  def sorted: DB = ???
+  def grade(g: Int): Seq[String] = db getOrElse(g, Nil)
+
+  def sorted: DB = _db
 }

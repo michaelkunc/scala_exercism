@@ -9,13 +9,13 @@ class GradeSchoolTest extends FunSuite with Matchers with OneInstancePerTest {
   }
 
   test ("add student") {
-    pending
+    // pending
     school.add("Aimee", 2)
     school.db should be (Map(2 -> Seq("Aimee")))
   }
 
   test ("add more students in same class") {
-    pending
+    // pending
     school.add("James", 2)
     school.add("Blair", 2)
     school.add("Paul", 2)
