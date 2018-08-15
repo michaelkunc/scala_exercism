@@ -11,5 +11,5 @@ class School {
 
   def grade(g: Int): Seq[String] = db getOrElse(g, Nil)
 
-  def sorted: DB = _db
+  def sorted: DB = _db.toSeq.sortBy(_._1).toMap.transform((k, v)=> v.sorted)
 }
