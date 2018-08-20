@@ -13,22 +13,22 @@ class CollatzConjectureTest extends FunSuite with Matchers {
   }
 
   test("even and odd steps") {
-    pending
+    // pending
     CollatzConjecture.steps(12) should be (Some(9))
   }
 
   test("Large number of even and odd steps") {
-    pending
+    // pending
     CollatzConjecture.steps(1000000) should be (Some(152))
   }
 
   test("zero is an error") {
-    pending
+    // pending
     CollatzConjecture.steps(0) should be (None)
   }
 
   test("negative value is an error") {
-    pending
+    // pending
     CollatzConjecture.steps(-15) should be (None)
   }
 }
