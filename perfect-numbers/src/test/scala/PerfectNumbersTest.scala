@@ -8,12 +8,12 @@ class PerfectNumbersTest extends FunSuite with Matchers {
   }
 
   test("Medium perfect number is classified correctly") {
-    pending
+    // pending
     PerfectNumbers.classify(28) should be(Right(NumberType.Perfect))
   }
 
   test("Large perfect number is classified correctly") {
-    pending
+    // pending
     PerfectNumbers.classify(33550336) should be(Right(NumberType.Perfect))
   }
 
