@@ -18,17 +18,17 @@ class PerfectNumbersTest extends FunSuite with Matchers {
   }
 
   test("Smallest abundant number is classified correctly") {
-    pending
+    // pending
     PerfectNumbers.classify(12) should be(Right(NumberType.Abundant))
   }
 
   test("Medium abundant number is classified correctly") {
-    pending
+    // pending
     PerfectNumbers.classify(30) should be(Right(NumberType.Abundant))
   }
 
   test("Large abundant number is classified correctly") {
-    pending
+    // pending
     PerfectNumbers.classify(33550335) should be(Right(NumberType.Abundant))
   }
 

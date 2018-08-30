@@ -17,3 +17,4 @@ target/
 .ensime_cache/
 .solution.json
 .keep
+.idea/

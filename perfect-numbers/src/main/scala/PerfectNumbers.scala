@@ -1,6 +1,7 @@
 object PerfectNumbers{
     def classify(num: Int) = aliquot_sum(num) match {
         case s if s == num => Right(NumberType.Perfect)
+        case x if x > num => Right(NumberType.Abundant)
     }
 
     private def aliquot_sum(n: Int) = {
