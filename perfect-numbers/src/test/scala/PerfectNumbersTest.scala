@@ -33,38 +33,38 @@ class PerfectNumbersTest extends FunSuite with Matchers {
   }
 
   test("Smallest prime deficient number is classified correctly") {
-    pending
+//    pending
     PerfectNumbers.classify(2) should be(Right(NumberType.Deficient))
   }
 
   test("Smallest non-prime deficient number is classified correctly") {
-    pending
+    // pending
     PerfectNumbers.classify(4) should be(Right(NumberType.Deficient))
   }
 
   test("Medium deficient number is classified correctly") {
-    pending
+    // pending
     PerfectNumbers.classify(32) should be(Right(NumberType.Deficient))
   }
 
   test("Large deficient number is classified correctly") {
-    pending
+    // pending
     PerfectNumbers.classify(33550337) should be(Right(NumberType.Deficient))
   }
 
   test("Edge case (no factors other than itself) is classified correctly") {
-    pending
+    // pending
     PerfectNumbers.classify(1) should be(Right(NumberType.Deficient))
   }
 
   test("Zero is rejected (not a natural number)") {
-    pending
+    // pending
     PerfectNumbers.classify(0) should be(
       Left("Classification is only possible for natural numbers."))
   }
 
   test("Negative integer is rejected (not a natural number)") {
-    pending
+    // pending
     PerfectNumbers.classify(-1) should be(
       Left("Classification is only possible for natural numbers."))
   }

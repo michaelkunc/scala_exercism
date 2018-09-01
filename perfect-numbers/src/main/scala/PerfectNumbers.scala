@@ -1,7 +1,10 @@
 object PerfectNumbers{
     def classify(num: Int) = aliquot_sum(num) match {
-        case s if s == num => Right(NumberType.Perfect)
-        case x if x > num => Right(NumberType.Abundant)
+        case z if z < 1 => Left("Classification is only possible for natural numbers.")
+        case p if p == num => Right(NumberType.Perfect)
+        case a if a > num => Right(NumberType.Abundant)
+        case d if d < num => Right(NumberType.Deficient)
+        case o if num == 1 => Right(NumberType.Deficient)
     }
 
     private def aliquot_sum(n: Int) = {
@@ -11,4 +14,4 @@ object PerfectNumbers{
 
 object NumberType extends Enumeration {
     val Perfect, Abundant, Deficient = Value
-}
+} 
