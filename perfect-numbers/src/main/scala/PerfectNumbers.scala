@@ -1,10 +1,12 @@
+import NumberType.NumberType
+
 object PerfectNumbers{
-    def classify(num: Int) = aliquot_sum(num) match {
-        case z if z < 1 => Left("Classification is only possible for natural numbers.")
-        case p if p == num => Right(NumberType.Perfect)
-        case a if a > num => Right(NumberType.Abundant)
-        case d if d < num => Right(NumberType.Deficient)
-        case o if num == 1 => Right(NumberType.Deficient)
+    def classify(num: Int): NumberType = {
+        (num, aliquot_sum(num)) match {
+            case (x, y) if (x == y) => NumberType.Perfect
+            case (x, y) if (x < y) => NumberType.Abundant
+            case (x, y) if (x > y) => NumberType.Deficient
+        }
     }
 
     private def aliquot_sum(n: Int) = {
@@ -13,5 +15,8 @@ object PerfectNumbers{
 }
 
 object NumberType extends Enumeration {
+    type NumberType = Value
     val Perfect, Abundant, Deficient = Value
 } 
+
+
